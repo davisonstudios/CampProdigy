@@ -44,6 +44,7 @@ const Container = styled.section`
     /* background-color: ${({theme}) => theme.colors.background}; */
     font-family: 'Roboto Flex';
     font-size: 2rem;
+    overflow: hidden;
 `
 
 const Sections = styled.div`
@@ -136,14 +137,14 @@ const AnimatedText = styled(Text)`
 const RocketStyle = styled.div`
     position: absolute;
     right: 0%;
-    bottom: 0%;
+    bottom: 8%;
     animation: fly 4.75s ease-in-out infinite;
     @keyframes fly {
         0% {
             transform: rotateZ(30deg) translate(0,0) scale(2);
         }
         100% {
-            transform: translate(-80vw,-90vh) scale(0.2);
+            transform: translate(-80vw,-80vh) scale(0.2);
         }
     }
 `
