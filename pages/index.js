@@ -135,15 +135,15 @@ const AnimatedText = styled(Text)`
 
 const RocketStyle = styled.div`
     position: absolute;
-    left: 90%;
-    top: 90%;
+    right: 0%;
+    bottom: 0%;
     animation: fly 4.75s ease-in-out infinite;
     @keyframes fly {
         0% {
-            transform: translate(0,0) scale(2);
+            transform: rotateZ(30deg) translate(0,0) scale(2);
         }
         100% {
-            transform: translate(-100vw,-100vh) scale(0.4);
+            transform: translate(-80vw,-90vh) scale(0.2);
         }
     }
 `
