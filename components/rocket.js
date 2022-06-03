@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const RocketStyle = styled.div`
     position: absolute;
-    right: 0%;
+    right: 15%;
     bottom: 8%;
     animation: fly 4.75s ease-in-out infinite;
     @keyframes fly {

@@ -5,19 +5,15 @@ const HeaderStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 20vh;
 `
 const Text = styled.div`
     color: ${({color}) => color || '#fafafa'};
     font-family: 'Roboto Flex';
-    font-size: '60px';
     font-weight: ${({weight}) => weight || '900'};
-    /* @media screen and (max-width: 600px) {
-        font-size: '2vw';
-    } */
 `
 const AnimatedText = styled(Text)`
-    line-height: 13vw;
+    line-height: 8vw;
     text-transform: uppercase;
     animation: morph 2.75s ease-in-out forwards, wiggle 2s 3s ease-in-out infinite;
     @keyframes morph {
@@ -25,7 +21,7 @@ const AnimatedText = styled(Text)`
             transform: perspective(1200px) rotate3d(1,0,0, 90deg);
         }
         to {
-            font-size: 20vw;
+            font-size: 12vw;
             text-shadow: 0 -5px 10px #3337;
         }
     }
