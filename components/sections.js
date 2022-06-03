@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 import { sections } from '../data/config'
-import Rocket from './rocket';
-import Header from './header';
+import { Card } from './card';
 
 const SectionStyle = styled.div`
     display: flex;
@@ -12,26 +11,11 @@ const SectionStyle = styled.div`
     font-family: 'Roboto Flex';
     font-size: 2rem;
 `
-
-const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background-image: linear-gradient(${({theme}) => theme.colors.bggrad1}, ${({theme}) => theme.colors.bggrad2});
-    overflow: hidden;
-    box-shadow: 0 -3px 10px #3337;
-    padding: 20px;
-    margin: 0 10px 10px;
-    text-shadow: 0 -3px 10px #3337;
-`
-
 const Heading = styled.div`
     font-size: 3rem;
     font-weight: 600;
     color: ${({theme}) => theme.colors.heading};
 `
-
 const Item = styled.div`
     a, a:visited {
         color: ${({theme}) => theme.colors.link};
@@ -39,12 +23,8 @@ const Item = styled.div`
     }
 `
 
-const Section = (props) => {
-    // const { sectionStyle } = props
-
+const Sections = (props) => {
     return <>
-        <Rocket />
-        <Header />
         <SectionStyle>
             {
                 sections.map( section => {
@@ -61,4 +41,4 @@ const Section = (props) => {
     </>
 }
 
-export default Section
+export default Sections

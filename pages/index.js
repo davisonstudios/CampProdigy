@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { ThemeProvider } from "styled-components";
-import Section from '../components/sections';
+import Sections from '../components/sections';
 import { theme } from '../data/theme';
+import Rocket from '../components/rocket';
+import Header from '../components/header';
 
 const Container = styled.section`
     display: flex;
@@ -21,7 +23,9 @@ export default function Home() {
     return (
         <ThemeProvider theme={theme}>
             <Container>
-                <Section />
+                <Rocket />
+                <Header />
+                <Sections />
             </Container>
         </ThemeProvider>
     )
