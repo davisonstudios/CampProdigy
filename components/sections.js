@@ -10,11 +10,17 @@ const SectionStyle = styled.div`
     flex-flow: row wrap;
     font-family: 'Roboto Flex';
     font-size: 2rem;
+    @media screen and (max-width: 600px) {
+        font-size: 6vw;
+    }
 `
 const Heading = styled.div`
     font-size: 3rem;
     font-weight: 600;
     color: ${({theme}) => theme.colors.heading};
+    @media screen and (max-width: 600px) {
+        font-size: 5vw;
+    }
 `
 const Item = styled.div`
     a, a:visited {

@@ -14,6 +14,10 @@ const RocketStyle = styled.div`
             transform: translate(-80vw,-80vh) scale(0.2);
         }
     }
+    @media screen and (max-width: 600px) {
+        visibility: hidden;
+        animation: none;
+    }
 `
 const Rocket = () => {
     return <RocketStyle>
