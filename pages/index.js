@@ -149,7 +149,7 @@ const RocketStyle = styled.div`
 `
 const Rocket = () => {
     return <RocketStyle>
-        <Image src='/../public/rocket.png' width='250px' height='200px' />
+        <Image src='/images/rocket.png' width='250px' height='200px' />
     </RocketStyle>
 }
 
