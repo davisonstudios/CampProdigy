@@ -15,7 +15,7 @@ export const sections = [
         title: "Coding",
         links: [
             {title: "Scratch", link: "https://scratch.mit.edu"},
-            {title: "Code.org", link: "https://code.org"},
+            {title: "Code.org", link: "https://code.org/hourofcode/overview"},
         ]
     },
     {

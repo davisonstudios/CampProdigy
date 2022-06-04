@@ -17,7 +17,7 @@ const AnimatedText = styled(Text)`
     z-index: ${({z}) => z || 0};
     line-height: 8vh;
     text-transform: uppercase;
-    animation: morph 2.75s ease-in-out forwards, wiggle 2s 3s ease-in-out infinite;
+    animation: morph 2.75s ease-in-out forwards, wiggle 1500ms 3s ease-in-out infinite;
     @keyframes morph {
         from {
             transform: perspective(1200px) rotate3d(1,0,0, 90deg);
@@ -28,17 +28,17 @@ const AnimatedText = styled(Text)`
         }
     }
     @keyframes wiggle {
+        0% {
+            transform: rotateZ(0deg);
+        }
         20% {
-            transform: rotateZ(5deg);
+            transform: rotateZ(1.5deg) skewX(-2deg);
         }
-        50% {
-            transform: rotateZ(5deg);
-        }
-        70% {
-            transform: rotateZ(-5deg);
+        90% {
+            transform: rotateZ(-1.5deg) skewX(2deg);
         }
         100% {
-            transform: rotateZ(-5deg);
+            transform: rotateZ(0deg);
         }
     }
 `

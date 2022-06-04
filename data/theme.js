@@ -7,6 +7,7 @@ export const theme = {
         title1: '#fff',
         title2: '#E3311D',
         link: '#fff',
+        linkselected: '#0fe',
         heading: '#E3311D',
     }
 }

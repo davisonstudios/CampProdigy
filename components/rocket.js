@@ -6,15 +6,15 @@ const RocketStyle = styled.div`
     position: absolute;
     right: 20%;
     bottom: 8%;
-    animation: fly 4.75s ease-in infinite;
+    animation: fly 4.75s ease-in-out infinite;
     @keyframes fly {
-        0% {
+        from {
             transform: rotateZ(30deg) scale(1.5);
-            /* transform: rotateZ(30deg) translate(0,0) scale(1.5); */
         }
-        100% {
-\            transform: translate(-40vw,-80vh) scale(0.2);
+        to {
+            transform: translate(-40vw,-80vh) scale(0.2);
         }
+       }
     }
     @media screen and (max-width: 600px) {
         visibility: hidden;

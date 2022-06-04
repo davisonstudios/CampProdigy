@@ -24,28 +24,44 @@ const Heading = styled.div`
     }
 `
 const Item = styled.div`
-    a, a:visited {
-        color: ${({theme}) => theme.colors.link};
-        text-decoration: none;
+    color: ${({theme}) => theme.colors.link};
+    text-decoration: none;
+    :hover {
+        color: ${({theme}) => theme.colors.linkselected};
+        animation: jiggle 600ms ease-in-out infinite;
+        @keyframes jiggle {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            33% {
+                transform: rotateZ(2deg);
+            }
+            66% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(-2deg);
+            }
+        }
     }
 `
 
 const Sections = (props) => {
-    return <>
+    return (
         <SectionStyle>
-            {
-                sections.map( section => {
-                    const {title, links} = section
-                    return <Card>
-                        <Heading>{title}</Heading>
-                        {links.map( (link, index) => {
-                            return <Item><Link href={link.link}><a>{link.title}</a></Link></Item>
-                        })}
-                    </Card>
-                })
-            }
+            {sections.map( (section, index) => {
+                const {title, links} = section
+                return <Card key={index}>
+                    <Heading>{title}</Heading>
+                    {links.map( (link, index) => {
+                        return <Link key={index} href={link.link}>
+                                <Item>{link.title}</Item>
+                            </Link>
+                    })}
+                </Card>
+            })}
         </SectionStyle>
-    </>
+    )
 }
 
 export default Sections
