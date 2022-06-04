@@ -8,7 +8,7 @@ const SectionStyle = styled.div`
     flex-direction: row;
     justify-content: center;
     flex-flow: row wrap;
-    font-family: 'Roboto Flex';
+    font-family: 'Luckiest Guy';
     font-size: 2rem;
     @media screen and (max-width: 600px) {
         font-size: 6vw;
@@ -16,7 +16,8 @@ const SectionStyle = styled.div`
 `
 const Heading = styled.div`
     font-size: 3rem;
-    font-weight: 600;
+    height: 4rem;
+    /* font-weight: 600; */
     color: ${({theme}) => theme.colors.heading};
     @media screen and (max-width: 600px) {
         font-size: 5vw;

@@ -5,6 +5,8 @@ export const sections = [
             {title: "Friv", link: "https://www.friv.com"},
             {title: "Cartoon Network", link: "https://www.cartoonnetworkhq.com/games"},
             {title: "Crazy Games", link: "https://www.crazygames.com"},
+            {title: "PS Kids", link: "https://pbskids.org/games"},
+            {title: "Fun Brain", link: "https://www.funbrain.com/games"},
             {title: "Poki", link: "https://poki.com"},
             {title: "Arkadium", link: "https://www.arkadium.com"},
         ]

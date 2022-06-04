@@ -9,10 +9,12 @@ const HeaderStyle = styled.div`
 `
 const Text = styled.div`
     color: ${({color}) => color || '#fafafa'};
-    font-family: 'Roboto Flex';
-    font-weight: ${({weight}) => weight || '900'};
+    font-family: 'Luckiest Guy'
+    /* font-family: 'Roboto Flex'; */
+    /* font-weight: ${({weight}) => weight || '900'}; */
 `
 const AnimatedText = styled(Text)`
+    z-index: ${({z}) => z || 0};
     line-height: 8vh;
     text-transform: uppercase;
     animation: morph 2.75s ease-in-out forwards, wiggle 2s 3s ease-in-out infinite;
@@ -44,7 +46,7 @@ const AnimatedText = styled(Text)`
 const Header = (props) => {
     return <HeaderStyle>
         <AnimatedText color={({theme}) => theme.colors.title1}>Camp</AnimatedText>
-        <AnimatedText color={({theme}) => theme.colors.title2}>Prodigy</AnimatedText>
+        <AnimatedText z='20' color={({theme}) => theme.colors.title2}>Prodigy</AnimatedText>
     </HeaderStyle>
 }
 

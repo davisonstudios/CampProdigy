@@ -2,16 +2,18 @@ import styled from 'styled-components'
 import Image from 'next/image';
 
 const RocketStyle = styled.div`
+    z-index: 5;
     position: absolute;
-    right: 25%;
+    right: 20%;
     bottom: 8%;
-    animation: fly 4.75s ease-in-out infinite;
+    animation: fly 4.75s ease-in infinite;
     @keyframes fly {
         0% {
-            transform: rotateZ(30deg) translate(0,0) scale(1.5);
+            transform: rotateZ(30deg) scale(1.5);
+            /* transform: rotateZ(30deg) translate(0,0) scale(1.5); */
         }
         100% {
-            transform: translate(-60vw,-80vh) scale(0.2);
+\            transform: translate(-40vw,-80vh) scale(0.2);
         }
     }
     @media screen and (max-width: 600px) {
