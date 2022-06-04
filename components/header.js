@@ -5,7 +5,7 @@ const HeaderStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 40vh;
 `
 const Text = styled.div`
     color: ${({color}) => color || '#fafafa'};
@@ -13,7 +13,7 @@ const Text = styled.div`
     font-weight: ${({weight}) => weight || '900'};
 `
 const AnimatedText = styled(Text)`
-    line-height: 8vw;
+    line-height: 8vh;
     text-transform: uppercase;
     animation: morph 2.75s ease-in-out forwards, wiggle 2s 3s ease-in-out infinite;
     @keyframes morph {
@@ -21,7 +21,7 @@ const AnimatedText = styled(Text)`
             transform: perspective(1200px) rotate3d(1,0,0, 90deg);
         }
         to {
-            font-size: 12vw;
+            font-size: 12vh;
             text-shadow: 0 -5px 10px #3337;
         }
     }

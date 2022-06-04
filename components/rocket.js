@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const RocketStyle = styled.div`
     position: absolute;
-    right: 15%;
+    right: 25%;
     bottom: 8%;
     animation: fly 4.75s ease-in-out infinite;
     @keyframes fly {
@@ -11,7 +11,7 @@ const RocketStyle = styled.div`
             transform: rotateZ(30deg) translate(0,0) scale(1.5);
         }
         100% {
-            transform: translate(-80vw,-80vh) scale(0.2);
+            transform: translate(-60vw,-80vh) scale(0.2);
         }
     }
     @media screen and (max-width: 600px) {
