@@ -8,7 +8,6 @@ export const sections = [
             {title: "PS Kids", link: "https://pbskids.org/games"},
             {title: "Fun Brain", link: "https://www.funbrain.com/games"},
             {title: "Poki", link: "https://poki.com"},
-            {title: "Totally Science", link: "https://totallyscience.co/"},
             {title: "Arkadium", link: "https://www.arkadium.com"},
         ]
     },
