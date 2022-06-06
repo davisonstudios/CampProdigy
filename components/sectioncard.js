@@ -3,8 +3,9 @@ import Link from 'next/link'
 import { Card } from './card';
 
 const Heading = styled.div`
-    font-size: 4.5vw;
-    height: 5vw;
+    font-size: 2rem;
+    /* line-height: 150%; */
+    /* height: 6vw; */
     color: ${({theme}) => theme.colors.heading};
 `
 const Item = styled.div`
@@ -31,7 +32,7 @@ const Item = styled.div`
     }
 `
 const Container = styled.div`
-    width: 300px;
+    width: 320px;
     font-family: 'Luckiest Guy';
 `
 

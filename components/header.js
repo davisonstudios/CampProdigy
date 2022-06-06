@@ -6,7 +6,11 @@ const HeaderStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25rem;
+    /* height: 250px; */
+    height: 15rem;
+    @media screen and (max-width: 600px) {
+        height: 5rem;
+    }
 `
 const Text = styled.div`
     color: ${({color}) => color || '#fafafa'};
@@ -15,10 +19,14 @@ const Text = styled.div`
 const AnimatedText = styled(Text)`
     z-index: ${({z}) => z || 0};
     line-height: 60%;
-    font-size: 12vw;
+    font-size: 8rem;
+    /* font-size: 12vw; */
     text-shadow: 0 -5px 10px #3337;
     text-transform: uppercase;
     animation: morph 2.75s ease-in-out forwards, wiggle 1500ms 3s ease-in-out infinite;
+    @media screen and (max-width: 600px) {
+        font-size: 3rem;
+    }
     @keyframes morph {
         from {
             transform: perspective(1200px) rotate3d(1,0,0, 90deg);
@@ -47,6 +55,9 @@ const LogoStyle = styled.span`
     margin-top: -100px;
     z-index: 15;
     animation: glide 3s ease-in-out alternate-reverse infinite;
+    @media screen and (max-width: 600px) {
+        visibility: hidden;
+    }
     @keyframes glide {
         0% {
             transform: translateX(200px);
@@ -74,6 +85,7 @@ const Header = (props) => {
     return <HeaderStyle>
         <AnimatedText color={({theme}) => theme.colors.title1}>Camp</AnimatedText>
         <Logo />
+        {/* <Logo /> */}
         <AnimatedText z='20' color={({theme}) => theme.colors.title2}>Prodigy</AnimatedText>
     </HeaderStyle>
 }
