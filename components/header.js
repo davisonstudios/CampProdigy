@@ -85,7 +85,6 @@ const Header = (props) => {
     return <HeaderStyle>
         <AnimatedText color={({theme}) => theme.colors.title1}>Camp</AnimatedText>
         <Logo />
-        {/* <Logo /> */}
         <AnimatedText z='20' color={({theme}) => theme.colors.title2}>Prodigy</AnimatedText>
     </HeaderStyle>
 }
