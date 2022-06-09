@@ -9,6 +9,7 @@ export const sections = [
             {title: "Fun Brain", link: "https://www.funbrain.com/games"},
             {title: "Poki", link: "https://poki.com"},
             {title: "Arkadium", link: "https://www.arkadium.com"},
+            {title: "Minecraft Recipes", link: "https://education.minecraft.net/wp-content/uploads/ChemistryLab_Journal.pdf"},
         ]
     },
     {
