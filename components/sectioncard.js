@@ -4,8 +4,6 @@ import { Card } from './card';
 
 const Heading = styled.div`
     font-size: 2rem;
-    /* line-height: 150%; */
-    /* height: 6vw; */
     color: ${({theme}) => theme.colors.heading};
 `
 const Item = styled.div`

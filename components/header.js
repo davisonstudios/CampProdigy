@@ -4,12 +4,12 @@ import Image from 'next/image'
 const HeaderStyle = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    /* height: 250px; */
-    height: 15rem;
-    @media screen and (max-width: 600px) {
-        height: 5rem;
+    height: 150px;
+    padding: 0 0 35px;
+    @media screen and (max-width: 700px) {
+        height: 150px;
     }
 `
 const Text = styled.div`
@@ -20,7 +20,6 @@ const AnimatedText = styled(Text)`
     z-index: ${({z}) => z || 0};
     line-height: 60%;
     font-size: 8rem;
-    /* font-size: 12vw; */
     text-shadow: 0 -5px 10px #3337;
     text-transform: uppercase;
     animation: morph 2.75s ease-in-out forwards, wiggle 1500ms 3s ease-in-out infinite;

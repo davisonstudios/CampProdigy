@@ -13,10 +13,9 @@ const Container = styled.section`
     height: 100vh;
     padding: 0 50px;
     margin: 0;
-    background-image: linear-gradient(180deg, ${({theme}) => theme.colors.bggrad2}, ${({theme}) => theme.colors.bggrad1});
-    font-family: 'Roboto Flex';
-    font-size: 1rem;
-    overflow: hidden;
+    @media screen and (max-width: 700px) {
+        height: 100%;
+    }
 `
 
 export default function Home() {

@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -33,4 +33,11 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+
+
+html,
+body {
+    background: linear-gradient(180deg, #6e78ff, #61f4de);
+    background-attachment: fixed;
 }

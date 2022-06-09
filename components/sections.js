@@ -6,11 +6,15 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-flow: row wrap;
+    align-items: start;
     gap: 20px;
+    /* background-color: blue; */
 
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 const Sections = (props) => {
