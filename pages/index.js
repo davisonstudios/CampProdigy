@@ -18,13 +18,13 @@ const Container = styled.section`
     }
 `
 
-export default function Home() {
+export default function Home(props) {
     return (
         <ThemeProvider theme={theme}>
             <Container>
                 <Rocket />
                 <Header />
-                <Sections />
+                <Sections config={props.config} />
             </Container>
         </ThemeProvider>
     )

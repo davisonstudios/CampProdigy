@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { sections } from '../data/config'
+import { config, configMac } from '../data/config'
 import SectionCard from './sectioncard'
 
 const Container = styled.div`
@@ -18,6 +18,8 @@ const Container = styled.div`
 `
 
 const Sections = (props) => {
+    const sections = props.config == 'mac' ? configMac : config
+    console.log( sections )
     return (
         <Container>
             {sections.map( (section, index) =>
